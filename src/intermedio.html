@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermedio</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <header>
+        <div class="title">
+
+            <div class="content">
+                <p class="T1">ARRASTRA LA IMAGEN SEGÚN CORRESPONDA</p>
+            </div>
+            <h3>Modo intermedio: números de 0 a 999</h3>
+    </header>
+    <div class="progress-container">
+        Barra de progreso: <progress id="progressBar" value="0" max="10"></progress>
+    </div>
+    <div class="numeros">
+        <div class="box-num1" id="numero1"></div>
+        <div class="signo" id="signo"></div>
+        <div class="box-num2" id="numero2"></div>
+    </div>
+    <div class="signos" id="signos">
+        <img src="images/mayor-que.jpg" draggable="true" ondragstart="drag(event)" id="mayor" alt="">
+        <img src="images/igual-que.jpeg" draggable="true" ondragstart="drag(event)" id="igual" alt="">
+        <img src="images/menor-que.jpg" draggable="true" ondragstart="drag(event)" id="menor" alt="">
+    </div>
+    <div class="mensaje" id="mensaje">La respuesta es:</div>
+    <ol id="historialRespuestas">Historial</ol>
+    <footer>
+        <h5 class="footer">Derechos de autor © 2023. Karenth Jinneth Montufar Molano.</h5>
+    </footer>
+    <script src="js/script-medio.js"></script>
+</body>
+
+</html>

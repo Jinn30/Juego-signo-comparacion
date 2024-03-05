@@ -1,0 +1,215 @@
+/*index*/
+body{
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.gradiant-ani{
+    margin-top: 20px;
+    margin-left: 50px;
+    background: linear-gradient(
+        to right,
+        #ffb703 40%,
+        #01ef96 50%,
+        #fb8500 70%
+    );
+    background-size: 200px auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 60px;
+    animation: flow 5s linear infinite;
+}
+@keyframes flow{
+    to {
+        background-position: 200px center;
+    }
+}
+
+.title{
+    width: 90%;
+    background: rgb(0, 0, 0);
+    padding: 1px;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title .content .T1{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Arial' ;
+    text-align: center;
+    color: #ffffff;
+}
+/*Orden y configuración de los botones*/
+.dificultad{
+    display: inline-block;
+    margin-left: 100px;
+}
+.button-easy{
+    border-radius: 6px;
+    height: 100px;
+    width: 200px;
+    margin-left: 70px;
+    font-size: 30px;
+    box-shadow: 0 0 5px darkolivegreen, 0 0 25px darkolivegreen;
+    background-color: darkolivegreen;
+    font-weight:bold;
+    cursor: pointer;
+}
+.button-easy:hover{
+    box-shadow: 0 0 5px darkolivegreen,
+    0 0 25px darkolivegreen, 0 0 50px darkolivegreen,
+    0 0 100px darkolivegreen, 0 0 200px darkolivegreen;
+}
+.button-medium{
+    border-radius: 6px;
+    height: 100px;
+    width: 200px;
+    margin-left: 70px;
+    font-size: 30px;
+    box-shadow: 0 0 5px darkorange, 0 0 25px darkorange;
+    background-color: darkorange;
+    font-weight:bold;
+    cursor: pointer;
+}
+.button-medium:hover{
+    box-shadow: 0 0 5px darkorange,
+    0 0 25px darkorange, 0 0 50px darkorange,
+    0 0 100px darkorange, 0 0 200px darkorange;
+}
+.button-hard{
+    border-radius: 6px; 
+    height: 100px;
+    width: 200px;
+    margin-left: 70px;
+    font-size: 30px;
+    box-shadow: 0 0 5px darkred, 0 0 25px darkred;
+    background-color: darkred;
+    font-weight:bold;
+    cursor: pointer; 
+}
+.button-hard:hover{
+    box-shadow: 0 0 5px darkred,
+    0 0 25px darkred, 0 0 50px darkred,
+    0 0 100px darkred, 0 0 200px darkred;
+}
+button:active{
+    transform: scale(0.96);
+}
+h2{
+    margin-left: 65px;
+    font-family: Arial;
+}
+/*Orden de las cajas*/
+.numeros{
+    display: inline-flex;
+    margin-left: 150px;
+}
+.progress-container {
+    border-radius: 5px;
+    margin-bottom: 50px;
+    margin-left: 500px;
+    width: 500px;
+    font-family: 'Arial';
+}
+
+h3{
+    font-family: Arial;
+    text-align: center;
+    color: #ffffff;
+}
+/*Configuracion de las cajas donde de muestran los numeros y el div donde se droppean las imagenes*/
+.numeros{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin-top: 1rem;
+}
+.box-num1{
+    height: 200px;
+    width: 200px;
+    background-color: transparent;
+    border-color: black;
+    border-style: solid;
+    font-size: 70px;
+    font-family: Arial;
+    text-align: center;
+}
+.signo{
+    height: 200px;
+    width: 200px;
+    background-color: transparent;
+    border-color: black;
+    border-style: dashed;
+    padding-bottom: 6px;
+    padding-right: 6px;
+}
+
+.box-num2{
+    bottom: 10px;
+    height: 200px;
+    width: 200px;
+    background-color: transparent;
+    border-color: black;
+    border-style: solid;
+    font-size: 70px;
+    font-family: Arial;
+    text-align: center;
+}
+.mensaje{
+    font-family: Arial;
+    font-size: 30px;
+    text-align: center;
+}
+/*Ordenes de las imagenes*/
+.signos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin: 2rem 0 1rem 150px;
+}
+
+/*Configuración de las imagenes*/
+img{
+    margin: 0;
+    border-color: black;
+    border-style: solid;
+    width: 200px;
+    height: 200px;
+}
+#historialRespuestas{
+    font-family: 'Arial';
+    font-size: 15px;
+    background-color: #e0e0e0;
+    border: 2px solid gray;
+    width: 320px;
+}
+section{
+    text-align: center;
+    background-color: wheat;
+    border: grey 2px dashed;
+    width: 600px;
+    margin: auto;
+    margin-top: 50px;
+}
+p{
+    padding: 5px;
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 18px;    
+}
+footer{
+    margin-top: 2rem;
+    background-color: #e0e0e0;
+    position: absolute;
+    width: 100%;
+}
+.footer{
+    text-align: center;
+    font-family: 'Arial';
+    font-weight: bold;
+    padding: 20px;
+    
+}
